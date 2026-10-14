@@ -1,0 +1,21 @@
+### 1. Test d'inscription (Citoyen)
+POST http://localhost:5000/api/auth/inscription
+Content-Type: application/json
+
+{
+  "nom": "Aloui",
+  "prenom": "ghada",
+  "email": "doudi.vscode.2@example.com",
+  "telephone": "12345678",
+  "motDePasse": "MonSuperMotDePasse123",
+  "role": "citoyen"
+}
+
+### 2. Test de connexion
+POST http://localhost:5000/api/auth/connexion
+Content-Type: application/json
+
+{
+  "email": "mohamed.vscode@example.com",
+  "motDePasse": "MonSuperMotDePasse123"
+}
